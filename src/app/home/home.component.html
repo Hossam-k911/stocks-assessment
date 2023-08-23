@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="text-center">
+    <h1>
+      <span>Stocks List</span>
+    </h1>
+  </div>
+
+  <section class="container">
+    <div class="row mt-3">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Stock Name</th>
+            <th scope="col">ID</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of stocksData">
+            <td>{{ i.stockName }}</td>
+            <td>{{ i.id }}</td>
+            <td>{{ i.price }}</td>
+            <!-- <td (click)="pick(i)"><i class="fas fa-check-square"></i></td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

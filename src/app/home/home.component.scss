@@ -1,0 +1,33 @@
+@import url("../app.component.scss");
+
+.table-bordered {
+  border: 1px solid #434343;
+  thead {
+    background-color: hsl(37, 60%, 55%);
+
+    color: #fff;
+    text-align: center;
+  }
+  tbody {
+    text-align: center;
+  }
+  td {
+    border: 1px solid #434343;
+  }
+}
+
+.spacing-table td.expandTable {
+  border: none !important;
+}
+
+td.mat-cell.cdk-cell.cdk-column-expandedDetail.mat-column-expandedDetail {
+  padding: 0 !important;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}

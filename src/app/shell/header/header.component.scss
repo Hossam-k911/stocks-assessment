@@ -1,0 +1,30 @@
+@import "src/theme/theme-variables";
+
+.navbar {
+  margin-bottom: $spacer;
+  background-color: black;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.logo {
+  width: auto;
+  max-width: none;
+  display: flex;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: -1px;
+  color: #444;
+  font-family: "Open Sans";
+  font-weight: 600;
+  height: 40px !important;
+}
+
+.starting-logo {
+  opacity: 1;
+}
+.nav-link {
+  padding-left: 2rem !important;
+}
