@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { OrdersDialogComponent } from './orders-dialog/orders-dialog.component';
+import { MatDialogContainer } from '@angular/material/dialog';
+import { QuoteService } from '@app/home/quote.service';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +13,7 @@ export class AboutComponent implements OnInit {
   ordersData: any = [];
   // dialogConfig: MatDialogConfig;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, public quote: QuoteService) {}
 
   ngOnInit() {}
 
@@ -20,12 +22,10 @@ export class AboutComponent implements OnInit {
       data: {
         name: 'hossam',
       },
-      width: '100%',
-      height: '80%',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      // this.animal = result;
+      this.ordersData.push(result);
     });
   }
 }

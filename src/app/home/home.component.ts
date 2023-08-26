@@ -154,33 +154,25 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(public quote: QuoteService) {}
 
   ngOnInit() {
-    // this.generatePrice();
     this.generateId();
 
     this.subscription = timer(0, 10000)
-      .pipe
-      // switchMap(() => this.service.getPosts())
-      ()
-      .subscribe((result) =>
-        // console.log(result)
-        this.generatePrice()
-      );
+      .pipe()
+      .subscribe((result) => this.generatePrice());
   }
 
   generatePrice() {
     this.stocksData.map((stock: any) => {
       stock.price = Math.floor(Math.random() * 100);
     });
+
     this.quote.stocksArray.next(this.stocksData);
   }
 
   generateId() {
     this.stocksData.map((stock: any) => {
-      // stock.id = Math.floor(Math.random() * 30);
       stock.id = UUID.UUID();
     });
   }
-  ngOnDestroy() {
-    this.quote.stocksArray.next([]);
-  }
+  ngOnDestroy() {}
 }

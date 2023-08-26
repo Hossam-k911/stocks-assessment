@@ -25,9 +25,9 @@
         <tbody>
           <tr *ngFor="let i of ordersData">
             <td>{{ i.stockName }}</td>
-            <td>{{ i.id }}</td>
             <td>{{ i.price }}</td>
-            <!-- <td (click)="pick(i)"><i class="fas fa-check-square"></i></td> -->
+            <td>{{ i.quantity }}</td>
+            <td>{{ i.personName }}</td>
           </tr>
         </tbody>
       </table>

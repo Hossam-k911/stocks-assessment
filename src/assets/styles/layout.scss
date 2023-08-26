@@ -1,0 +1,84 @@
+/* global classes start*/
+.mt-3 {
+  margin-top: 3rem !important;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+/* global classes End*/
+
+/* Button styling start*/
+
+.btn.btn-primary {
+  background: #161c30;
+  border: 2px solid #161c30;
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  background: #fff !important;
+  border-color: #161c30;
+  color: #161c30;
+}
+
+/* Button styling end */
+
+/* popup overlay styling start   */
+
+::ng-deep.cdk-overlay-container {
+  position: fixed;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  pointer-events: none;
+}
+
+::ng-deep.mat-dialog-container {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 1;
+  width: 100%;
+  height: 70%;
+  top: 15%;
+}
+.mat-dialog-title {
+  font-weight: bold;
+}
+
+.closeDialog {
+  position: absolute;
+  top: 1.6rem;
+
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* popup overlay styling End   */
+
+/*form inputs  styling Start   */
+
+.mat-form-field {
+  font-size: inherit;
+  font-weight: bold;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  position: relative;
+  margin-left: 8px;
+  padding: 0.1em 0 !important;
+  background-color: rgba(201, 5, 5, 0) !important;
+
+  width: 100%;
+}
+
+.form-control {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: auto;
+}
+/*form inputs  styling End   */

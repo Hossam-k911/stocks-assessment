@@ -15,6 +15,8 @@ import { BootstrapModalModule } from 'ngx-bs-modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OrdersDialogComponent } from './about/orders-dialog/orders-dialog.component';
+import { MatDialogModule, MatDialogContainer } from '@angular/material/dialog';
+// import { ToastrModule } from 'ngx-toastr'
 
 @NgModule({
   imports: [
@@ -28,8 +30,10 @@ import { OrdersDialogComponent } from './about/orders-dialog/orders-dialog.compo
     ShellModule,
     HomeModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
-    BootstrapModalModule.forRoot({ container: document.body }),
+    // BootstrapModalModule.forRoot({ container: document.body }),
     BrowserAnimationsModule,
+    MatDialogModule,
+    // ToastrModule.forRoot()
   ],
   declarations: [AppComponent],
   providers: [
