@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { SharedModule } from '@shared';
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './market-routing.module';
+import { MarketComponent } from './market.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, SharedModule, HomeRoutingModule],
-  declarations: [HomeComponent],
+  declarations: [MarketComponent],
 })
-export class HomeModule {}
+export class MarketModule {}

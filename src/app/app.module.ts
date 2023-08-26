@@ -7,14 +7,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { RouteReusableStrategy, ApiPrefixInterceptor, ErrorHandlerInterceptor, SharedModule } from '@shared';
-import { HomeModule } from './home/home.module';
+import { MarketModule } from './market/market.module';
 import { ShellModule } from './shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BootstrapModalModule } from 'ngx-bs-modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { OrdersDialogComponent } from './about/orders-dialog/orders-dialog.component';
+import { OrdersDialogComponent } from './orders/orders-dialog/orders-dialog.component';
 import { MatDialogModule, MatDialogContainer } from '@angular/material/dialog';
 // import { ToastrModule } from 'ngx-toastr'
 
@@ -28,7 +28,7 @@ import { MatDialogModule, MatDialogContainer } from '@angular/material/dialog';
     NgbModule,
     SharedModule,
     ShellModule,
-    HomeModule,
+    MarketModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
     // BootstrapModalModule.forRoot({ container: document.body }),
     BrowserAnimationsModule,

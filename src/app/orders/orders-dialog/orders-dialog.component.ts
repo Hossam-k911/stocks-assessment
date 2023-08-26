@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { QuoteService } from '@app/home/quote.service';
+import { QuoteService } from '@app/market/quote.service';
 
 @Component({
   selector: 'app-orders-dialog',

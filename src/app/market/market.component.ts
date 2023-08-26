@@ -5,11 +5,11 @@ import { QuoteService } from './quote.service';
 import { UUID } from 'angular2-uuid';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-market',
+  templateUrl: './market.component.html',
+  styleUrls: ['./market.component.scss'],
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class MarketComponent implements OnInit, OnDestroy {
   // initializing usable data
 
   stocksData: any = [

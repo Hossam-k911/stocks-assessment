@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { OrdersDialogComponent } from './orders-dialog/orders-dialog.component';
 import { MatDialogContainer } from '@angular/material/dialog';
-import { QuoteService } from '@app/home/quote.service';
+import { QuoteService } from '@app/market/quote.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
+  selector: 'app-orders',
+  templateUrl: './orders.component.html',
+  styleUrls: ['./orders.component.scss'],
 })
-export class AboutComponent implements OnInit {
+export class OrdersComponent implements OnInit {
   ordersData: any = [];
   // dialogConfig: MatDialogConfig;
 
